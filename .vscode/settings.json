@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "flowtype",
+        "plugin",
+        "readonly",
+        "recommended"
+    ],
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "javascript.validate.enable": false,
+    "workbench.colorTheme": "One Dark Pro Monokai Darker"
+}
