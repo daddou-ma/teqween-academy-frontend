@@ -19,3 +19,8 @@ React Hooks
 React Context
 React Testing
 React cssinjs
+unit testing styles
+Continous Integration
+Continous Delivery
+Continous Deployement
+logging and throw

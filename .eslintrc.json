@@ -6,7 +6,8 @@
     "extends": [
         "airbnb",
         "plugin:react/recommended",
-        "plugin:flowtype/recommended"
+        "plugin:flowtype/recommended",
+        "plugin:jest/all"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -21,8 +22,10 @@
     },
     "plugins": [
         "react",
-        "flowtype"
+        "flowtype",
+        "jest"
     ],
     "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
