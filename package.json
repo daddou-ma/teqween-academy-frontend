@@ -9,23 +9,25 @@
   "scripts": {
     "eslint-pretest": "npx lint-staged",
     "flow-pretest": "npx flow check",
-    "build": "webpack --config webpack.config.js"
+    "commit": "npx commit",
+    "build": "npx webpack --config webpack.config.js"
   },
   "lint-staged": {
-    "*.js": ["npx eslint --ignore-path .eslintignore . --fix"]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn eslint-pretest && yarn flow-pretest"
-    }
+    "*.js": [
+      "npx eslint --ignore-path .eslintignore . --fix"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-flow": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/prompt-cli": "^8.3.5",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "commitlint": "^8.3.5",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-flowtype": "^4.6.0",
