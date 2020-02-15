@@ -7,7 +7,17 @@
   "author": "Mohamed El Amine DADDOU <mea.daddou@gmail.com>",
   "license": "NONE",
   "scripts": {
+    "eslint-pretest": "npx lint-staged",
+    "flow-pretest": "npx flow check",
     "build": "webpack --config webpack.config.js"
+  },
+  "lint-staged": {
+    "*.js": ["npx eslint --ignore-path .eslintignore . --fix"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn eslint-pretest && yarn flow-pretest"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -23,6 +33,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "flow-babel-webpack-plugin": "^1.1.1",
     "flow-bin": "^0.118.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   },
