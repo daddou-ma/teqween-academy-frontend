@@ -1,5 +1,8 @@
 // @flow
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const welcome = 'Welcome to your first project 2020';
-
-console.log(welcome);
+ReactDOM.render(
+  <h1>Hello, world !</h1>,
+  document.getElementById('root'),
+);

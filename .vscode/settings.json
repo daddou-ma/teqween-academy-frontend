@@ -7,9 +7,11 @@
       "eslintignore",
       "flowtype",
       "gmail",
+      "lightblue",
       "plugin",
       "readonly",
       "recommended",
+      "stylelint",
       "unmount"
     ],
     "editor.tabSize": 2,

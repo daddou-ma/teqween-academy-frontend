@@ -24,3 +24,7 @@ Continous Integration
 Continous Delivery
 Continous Deployement
 logging and throw
+debug levels
+
+# Links
+https://logrocket.com/pricing/

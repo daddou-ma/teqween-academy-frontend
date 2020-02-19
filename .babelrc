@@ -1,4 +1,18 @@
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-flow"],
-    "plugins": ["@babel/plugin-proposal-object-rest-spread", "transform-flow-comments"]
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-flow"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "transform-flow-comments",
+    [
+      "babel-plugin-styled-components",
+      {
+        "displayName": true,
+        "fileName": true
+      }
+    ]
+  ]
 }

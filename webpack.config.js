@@ -1,5 +1,6 @@
 const path = require('path');
 const FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -13,7 +14,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader', 'eslint-loader', 'stylelint-custom-processor-loader'],
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader'],
       },
     ],
   },
@@ -27,5 +32,9 @@ module.exports = {
   },
   plugins: [
     new FlowBabelWebpackPlugin(),
+    new HtmlWebPackPlugin({
+      template: './public/index.html',
+      filename: './index.html',
+    }),
   ],
 };
