@@ -1,8 +1,11 @@
-// @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { Button } from 'Components/base';
+
 ReactDOM.render(
-  <h1>Hello, world !</h1>,
+  <fragment>
+    <Button variant="red" text="Hello My World !" />
+  </fragment>,
   document.getElementById('root'),
 );
