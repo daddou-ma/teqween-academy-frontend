@@ -1,21 +1,31 @@
 {
     "cSpell.words": [
+      "Sider",
       "aftereach",
+      "antd",
       "beforeeach",
       "commitlint",
       "daddou",
       "eslintignore",
       "flowtype",
       "gmail",
+      "helvtica",
       "lightblue",
       "plugin",
       "readonly",
       "recommended",
+      "rstyle",
+      "rstyles",
       "stylelint",
       "unmount"
     ],
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
     "javascript.validate.enable": false,
-    "workbench.colorTheme": "One Dark Pro Monokai Darker"
+    "workbench.colorTheme": "One Dark Pro Monokai Darker",
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
 }
